@@ -1,0 +1,86 @@
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+/* 숨김 콘텐츠 */
+.a11y-hidden, legend {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+/* 헤더 영역 */
+.header-bg {
+  background-color: #f6f5ef;
+  border-bottom: 1px solid #e5e5e5;
+}
+.header {
+  width: 1100px;
+  margin: 0 auto;
+}
+.logo {
+  float: left;
+  margin-top: 20px;
+}
+.utility {
+  float: right;
+}
+.utility-list {
+  display: inline-block;
+  margin: 11px 10px;
+}
+.utility-list li {
+  float: left;
+  border-left: 1px solid #ccc;
+}
+.utility-list li:first-child {
+  border-left: none;
+}
+.utility-list li a {
+  padding: 0 15px;
+  color: #555555;
+}
+
+.utility form {
+  margin-top: 7px;
+  margin-right: 30px;
+  float: right;
+}
+.utility fieldset {
+  padding: 1px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.utility input {
+  border: none;
+  padding: 5px 10px;
+}
+.search-btn {
+  display: inline-block;
+  overflow: hidden;
+  background-image: url(../img/search-btn.png);
+  background-repeat: no-repeat;
+  background-size: 20px 21px;
+  background-position: center;
+  padding-top: 34px;
+  width: 34px;
+  height: 34px;
+  vertical-align: middle;
+}
+.navigation {
+  float: right;
+}
+.menu-item {
+  display: inline-block;
+}
+.menu-item a {
+  display: inline-block;
+  padding: 15px 25px 40px 25px;
+  color: #555555;
+  font-weight: 400;
+}
