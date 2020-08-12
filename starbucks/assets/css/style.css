@@ -4,7 +4,8 @@
 .event,
 .notice-n-promotion,
 .rewards,
-.rwanda {
+.rwanda,
+.new_arrival-bean {
   width: 1100px;
   margin: 0 auto;
 }
@@ -455,4 +456,81 @@
 .rwanda__more-btn:hover {
   background: #fff;
   color: #000;
+}
+
+/* 새음료_자메이카 */
+
+.new_arrival-bean-box {
+  height: 400px;
+  background-color: #c3d2d9;
+}
+.new_arrival-bean {
+  position: relative;
+  padding-top: 60px;
+  height: 100%;
+  background-image: url(../img/new_arrival-logo.png), url(../img/new_arrival-bean-bg.png);
+  background-position: 0 50%, 100% 100%;
+  background-repeat: no-repeat;
+  background-size: auto, 60%;
+}
+
+.new_arrival-heading {
+  padding-left:  160px;
+  margin-bottom: 10px;
+  font-size: 1.7rem;
+  letter-spacing: .5rem;
+  font-weight: 700;
+}
+.new_arrival__title span {
+  display: block;
+  padding-left: 160px;
+  color: #333;
+}
+.new_arrival__title span:nth-child(1),
+.new_arrival__title span:nth-child(2) {
+  font-family: 'Rowdies', cursive;
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 1;
+}
+.new_arrival__title span:last-child {
+  margin-top: 10px;
+  margin-bottom: 90px;
+  font-size: 2rem;
+  letter-spacing: 1.2rem;
+}
+.new_arrival-bean__info {
+  padding-left: 160px;
+}
+.new_arrival-bean__info li {
+  position: relative;
+  margin: 5px 0;
+  padding-left: 10px;
+  color: #555;
+  text-shadow: rgb(255, 255, 255) 1px 0 3px;
+}
+.new_arrival-bean__info li::before {
+  content:"";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.new_arrival-bean__more-btn {
+  position: absolute;
+  top: 250px;
+  left: 0px;
+  margin: 20px 0 20px 160px;
+  color: #222;
+  border-color: #222;
+}
+.new_arrival-bean__more-btn:hover {
+  color: #fff;
+  background-color: #272727;
 }
