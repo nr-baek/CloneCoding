@@ -6,7 +6,8 @@
 .rewards,
 .rwanda,
 .new_arrival-bean,
-.favorite {
+.favorite,
+.magazine {
   width: 1100px;
   margin: 0 auto;
 }
@@ -611,6 +612,75 @@
   border-color: #fff;
 }
 
+/* 매거진  */
+.magazine-box {
+  height: 695px;
+}
+.magazine {
+  height: 100%;
+  background-image: url(../img/magazine_bg.png), url(../img/new_arrival-logo.png);
+  background-repeat: no-repeat;
+  background-position: 0 50%, 100% 42%;
+  background-size: auto, 5.5em;
+  padding-top: 265px;
+  position: relative;
+}
+.magazine::before {
+  content:"";
+  display: block;
+  position: absolute;
+  top: 430px;
+  right: 0;
+  z-index: -1;
+  border-top: 1px solid #aaa;
+  width: 1000px;
+  height: 1px;
+}
+.magazine::after {
+  content:"";
+  display: block;
+  position: absolute;
+  top: 140px;
+  left: 500px;
+  z-index: -1;
+  border-left: 1px solid #aaa;
+  width: 1px;
+  height: 445px;
+}
+.magazine-heading,
+.magazine-text,
+.magazine-link {
+  margin-left: 550px;
+}
+.magazine-heading {
+  font-size: 4.2em;
+  font-weight: 500;
+  letter-spacing: .25em;
+  font-family: 'Oswald', sans-serif;
+}
+.magazine-text {
+  margin-top: 10px;
+  font-size: 1.65em;
+  color: #888;
+}
+.magazine-link {
+  display: inline-block;
+  margin-top: 85px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.9em;
+  font-weight: 400;
+  letter-spacing: .45em;
+  padding-left: 12px;
+  padding-right: 5px;
+  padding: 0px 5px 5px 12px;
+  transition: background-color 500ms;
+}
+.magazine-link:hover,
+.magazine-link:focus {
+  background-color: rgb(209, 135, 49);
+  color: #fff;
+  text-decoration: underline;
+}
 .mam {
   height: 10000px;
 }
