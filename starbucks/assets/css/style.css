@@ -3,7 +3,8 @@
 .header,
 .event,
 .notice-n-promotion,
-.rewards {
+.rewards,
+.rwanda {
   width: 1100px;
   margin: 0 auto;
 }
@@ -18,6 +19,8 @@
   border: 2px solid;
   border-radius: 3px;
   font-size: 1.6rem;
+  transition-property: background-color color;
+  transition-duration: 500ms;
 }
 .comp-btn:hover {
   text-decoration: underline;
@@ -108,6 +111,8 @@
 /* 이벤트 영역 */
 .event-bg {
   background-image: url(../img/event_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 630px;
   margin-top: 121px;
   position: relative;
@@ -153,7 +158,6 @@
   position: absolute;
   display: block;
   font-size: 1.67rem;
-  letter-spacing: ;
   color: #fff;
   font-weight: 500;
   width: 210px;
@@ -212,7 +216,6 @@
   opacity: 0;
   animation: opacityAni 500ms ease-in-out forwards;
   animation-delay: 2000ms;
-  transition: background-color 500ms;
 }
 .event__more-btn:hover {
   background-color: #00a252;
@@ -366,9 +369,9 @@
   border: 2px solid #000;
   border-radius: 3px;
   text-align: center;
+  padding: 6px 0;
   transition-property: background-color color;
   transition-duration: 500ms;
-  padding: 6px 0;
 }
 
 .rewards__btn-box a {
@@ -404,4 +407,52 @@
 .rewards__eGift-btn {
   color: #000;
   width: 245px;
+}
+
+/* 르완다 블론드 로스트 */
+.rwanda-bg {
+  background-image: url(../img/rwanda_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 573px;
+}
+.rwanda {
+  position: relative;
+  padding-top: 150px;
+  height: 100%;
+}
+.rwanda-heading {
+  position: absolute;
+  left: 150px;
+  top: 70px;
+}
+.rwanda__text,
+.rwanda__more-btn {
+  margin-left: 450px;
+}
+.rwanda__text {
+  margin-bottom: 50px;
+}
+.rwanda__text dt {
+  color: rgb(172, 209, 192);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.rwanda__text dt span {
+  display: block;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.rwanda__text dd {
+  color: #eee;
+  font-size: 1.7rem;
+}
+.rwanda__more-btn {
+  border-color: #fff;
+  color: #fff;
+}
+.rwanda__more-btn:hover {
+  background: #fff;
+  color: #000;
 }
