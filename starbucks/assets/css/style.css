@@ -2,7 +2,8 @@
 
 .header,
 .event,
-.notice-n-promotion {
+.notice-n-promotion,
+.rewards {
   width: 1100px;
   margin: 0 auto;
 }
@@ -303,4 +304,104 @@
   height: 100%;
   background: url(../img/btn_prom_down.png) no-repeat;
   background-size: cover;
+}
+
+/* 리워드 영역 */
+.rewards-bg {
+  height: 263px;
+  background-image: linear-gradient(to right, #272727 40%, #d6c798 40%);
+}
+.rewards {
+  height: 100%;
+  background-image: url(../img/reward_star_bg_w.png), url(../img/reward_texbg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top left -13%, top right;
+  padding: 30px 0 50px 0;
+}
+
+.rewards-heading {
+  float: left;
+  margin-top: 86px;
+}
+.rewards-title,
+.rewards__text-box,
+.rewards__eGift-box {
+  margin-left: 380px;
+}
+.rewards-title {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+.rewards-title span,
+.rewards__text-box span,
+.rewards__eGift-box span {
+  font-weight: 700;
+}
+.rewards__text-box,
+.rewards__eGift-box {
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 1.55em;
+  color: #555;
+  margin-bottom: 30px;
+}
+.rewards__text {
+  width: 450px;
+  float: left;
+}
+.rewards__efift {
+  width: 365px;
+  float: left;
+  margin-bottom: 30px;
+}
+.rewards__btn-box,
+.rewards__eGift-btn {
+  float: right;
+}
+.rewards__btn-box a,
+.rewards__eGift-btn {
+  font-weight: 500;
+  display: inline-block;
+  border: 2px solid #000;
+  border-radius: 3px;
+  text-align: center;
+  transition-property: background-color color;
+  transition-duration: 500ms;
+  padding: 6px 0;
+}
+
+.rewards__btn-box a {
+  margin-top: 5px;
+  color: #000;
+  width: 120px;
+}
+
+.rewards__btn-box a:first-child {
+  color: #fff;
+  background-color: #272727;
+}
+.rewards__btn-box a:first-child:hover {
+  color: #000;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.rewards__btn-box a:last-child {
+  color: #000;
+  background-color: transparent;
+}
+.rewards__btn-box a:last-child:hover,
+.rewards__eGift-btn:hover {
+  color: #fff;
+  text-decoration: underline;
+  background-color: #272727;
+}
+
+.rewards__eGift-box span {
+  display: block;
+}
+
+.rewards__eGift-btn {
+  color: #000;
+  width: 245px;
 }
