@@ -5,7 +5,8 @@
 .notice-n-promotion,
 .rewards,
 .rwanda,
-.new_arrival-bean {
+.new_arrival-bean,
+.favorite {
   width: 1100px;
   margin: 0 auto;
 }
@@ -23,7 +24,8 @@
   transition-property: background-color color;
   transition-duration: 500ms;
 }
-.comp-btn:hover {
+.comp-btn:hover,
+.comp-btn:focus {
   text-decoration: underline;
 }
 
@@ -218,7 +220,8 @@
   animation: opacityAni 500ms ease-in-out forwards;
   animation-delay: 2000ms;
 }
-.event__more-btn:hover {
+.event__more-btn:hover, 
+.event__more-btn:focus {
   background-color: #00a252;
 }
 .event__pin {
@@ -385,7 +388,8 @@
   color: #fff;
   background-color: #272727;
 }
-.rewards__btn-box a:first-child:hover {
+.rewards__btn-box a:first-child:hover,
+.rewards__btn-box a:first-child:focus {
   color: #000;
   text-decoration: underline;
   background-color: transparent;
@@ -395,7 +399,9 @@
   background-color: transparent;
 }
 .rewards__btn-box a:last-child:hover,
-.rewards__eGift-btn:hover {
+.rewards__btn-box a:last-child:focus,
+.rewards__eGift-btn:hover, 
+.rewards__eGift-btn:focus {
   color: #fff;
   text-decoration: underline;
   background-color: #272727;
@@ -453,7 +459,8 @@
   border-color: #fff;
   color: #fff;
 }
-.rwanda__more-btn:hover {
+.rwanda__more-btn:hover,
+.rwanda__more-btn:focus {
   background: #fff;
   color: #000;
 }
@@ -469,7 +476,7 @@
   padding-top: 60px;
   height: 100%;
   background-image: url(../img/new_arrival-logo.png), url(../img/new_arrival-bean-bg.png);
-  background-position: 0 50%, 100% 100%;
+  background-position: 0 50%, 100% 101%;
   background-repeat: no-repeat;
   background-size: auto, 60%;
 }
@@ -504,7 +511,8 @@
 }
 .new_arrival-bean__info li {
   position: relative;
-  margin: 5px 0;
+  bottom: 10px;
+  margin-top: 5px;
   padding-left: 10px;
   color: #555;
   text-shadow: rgb(255, 255, 255) 1px 0 3px;
@@ -526,11 +534,83 @@
   position: absolute;
   top: 250px;
   left: 0px;
-  margin: 20px 0 20px 160px;
+  margin: 20px 0 0px 160px;
   color: #222;
   border-color: #222;
 }
-.new_arrival-bean__more-btn:hover {
+.new_arrival-bean__more-btn:hover,
+.new_arrival-bean__more-btn:focus {
   color: #fff;
   background-color: #272727;
+}
+
+/* 다양한 메뉴 */
+.favorite-bg {
+  height: 800px;
+  background-image: url(../img/fav_bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+}
+.favorite {
+  height: 100%;
+  background-image: url(../img/fav-picture.png);
+  background-position: 100% 30%;
+  background-repeat: no-repeat;
+  padding-top: 110px;
+}
+
+.favorite-text {
+  width: 362px;
+  text-align: right;
+  color: #fff;
+}
+.favorite-title span {
+  display: inline-block;
+  line-height: .9;
+}
+.favorite-title span:first-child {
+  letter-spacing: 13px;
+  font-size: 90px;
+  font-weight: 500;
+}
+.favorite-title span:nth-child(2) {
+  letter-spacing: 9px;
+  font-size: 80px;
+  font-weight: 500;
+}
+.favorite-title span:last-child {
+  letter-spacing: 7px;
+  font-size: 43px;
+  font-weight: 500;
+  line-height: 1.7;
+}
+.favorite-sub-title {
+  display: inline-block;
+  margin-top: 40px;
+  font-size: 2.8rem;
+  text-align: right;
+}
+.favorite-sub-title span {
+  font-weight: 700;
+}
+.favorite-description {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+.favorite-description span {
+  display: block;
+}
+.favorite-more-btn:hover,
+.favorite-more-btn:focus {
+  color: #000;
+  background-color: #fff;
+  text-decoration: underline;
+  border-color: #fff;
+}
+
+.mam {
+  height: 10000px;
 }
