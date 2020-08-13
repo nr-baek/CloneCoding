@@ -7,7 +7,8 @@
 .rwanda,
 .new_arrival-bean,
 .favorite,
-.magazine {
+.magazine,
+.store {
   width: 1100px;
   margin: 0 auto;
 }
@@ -681,6 +682,42 @@
   color: #fff;
   text-decoration: underline;
 }
-.mam {
-  height: 10000px;
+/* 스토어 */
+.store-bg {
+  height: 400px;
+  background-image: url(../img/store_bg.jpg);
 }
+.store {
+  height: 100%;
+  background-image: url(../img/store_dt.png),url(../img/store_cafe.png),url(../img/store_bean.png), url(../img/store_market.png);
+  background-repeat: no-repeat;
+  background-position: 300px 85%, 70px 0, 58% -60px, 100% 100%;
+  padding: 100px 0 0 660px;
+}
+.store-text-box {
+  display: inline-block;
+  text-align: left;
+}
+.store-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.store-sub-title {
+  margin-top: 3px;
+  font-size: 1.8rem;
+}
+.store-text {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+.store-text span {
+  font-weight: 700;
+}
+.store-search-btn:hover,
+.store-search-btn:focus {
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+}
+
