@@ -8,7 +8,11 @@
 .new_arrival-bean,
 .favorite,
 .magazine,
-.store {
+.store,
+.footer-menu,
+.awards,
+.bottom-util
+ {
   width: 1100px;
   margin: 0 auto;
 }
@@ -721,3 +725,104 @@
   color: #fff;
 }
 
+/* 푸터 영역 */
+
+.footer {
+  height: 553px;
+  background-color: #2C2A29;
+  color: #fff;
+  padding-top: 32px;
+}
+.footer-menu {
+  background-image: url(../img/footer_logo.png);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+}
+.footer-menu__item {
+  float: left;
+  width: 220px;
+}
+.footer-menu__item span {
+  display: block;
+  margin-bottom: 10px;
+}
+.footer-menu__list li {
+  margin-bottom: 5px;
+}
+.awards-wrap {
+  margin-top: 40px;
+  height: 80px;
+  background-color: #272727;
+}
+.awards li {
+  vertical-align: center;
+  height: 80px;
+  width: 180px;
+  display: inline-block;
+  padding-top: 80px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.awards li:nth-child(1) {
+  background-image: url(../img/footer_award17_01.jpg);
+}
+.awards li:nth-child(2) {
+  background-image: url(../img/footer_award17_02.jpg);
+}
+.awards li:nth-child(3) {
+  background-image: url(../img/footer_award17_03.jpg);
+}
+.awards li:nth-child(4) {
+  background-image: url(../img/footer_award17_04.jpg);
+}
+.awards li:nth-child(5) {
+  background-image: url(../img/footer_award17_05.jpg);
+}
+.awards li:nth-child(6) {
+  background-image: url(../img/footer_award17_06.jpg);
+}
+.bottom-util-wrap {
+  margin-top: 30px;
+  text-align: center;
+}
+.bottom-util li {
+  display: inline-block;
+  border-left: 1px solid #555;
+}
+.bottom-util li:first-child {
+  border: 0;
+}
+.bottom-util li:first-child a {
+  color: rgb(20, 172, 0);
+}
+.bottom-util li a {
+  display: inline-block;
+  padding: 0 10px;
+}
+.bottom-btn {
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  width: 114px;
+  height: 34px;
+  padding-top: 5px;
+  margin: 15px 3px;
+}
+.bottom-btn:hover {
+  text-decoration: underline;
+}
+.address {
+  font-style: normal;
+  text-align: center;
+  margin-top: 7px;
+}
+.address span {
+  margin: 0 10px;
+  color: #aaa;
+}
+.copyright {
+  display: block;
+  color: #aaa;
+  margin: 10px 0;
+}
