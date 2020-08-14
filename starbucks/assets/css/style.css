@@ -27,7 +27,7 @@
   border: 2px solid;
   border-radius: 3px;
   font-size: 1.6rem;
-  transition-property: background-color color;
+  transition-property: background-color, color;
   transition-duration: 500ms;
 }
 .comp-btn:hover,
@@ -75,6 +75,7 @@
 .utility-list li a {
   padding: 0 15px;
   color: #555555;
+  font-size: 1.3rem;
 }
 
 .utility form {
@@ -117,7 +118,7 @@
   padding: 15px 25px 40px 25px;
   color: #555555;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 .menu-item a:hover {
   color: #5f8c05;
@@ -388,7 +389,7 @@
   border-radius: 3px;
   text-align: center;
   padding: 6px 0;
-  transition-property: background-color color;
+  transition-property: background-color, color;
   transition-duration: 500ms;
 }
 
@@ -753,9 +754,11 @@
 .footer-menu__item span {
   display: block;
   margin-bottom: 10px;
+  font-size: 14px;
 }
 .footer-menu__list li {
   margin-bottom: 5px;
+  font-size: 12px;
 }
 .awards-wrap {
   margin-top: 40px;
