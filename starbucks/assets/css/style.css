@@ -1,6 +1,8 @@
 /* 공통 적용 */ 
 
 .header,
+.subMenu,
+.subMenu-bottom__text,
 .event,
 .notice-n-promotion,
 .rewards,
@@ -16,6 +18,9 @@
   width: 1100px;
   margin: 0 auto;
 }
+a:hover {
+  text-decoration: underline;
+}
 .clearfix::after {
   display: block;
   content: "";
@@ -29,10 +34,6 @@
   font-size: 1.6rem;
   transition-property: background-color, color;
   transition-duration: 500ms;
-}
-.comp-btn:hover,
-.comp-btn:focus {
-  text-decoration: underline;
 }
 
 /* 숨김 콘텐츠 */
@@ -107,24 +108,66 @@
 .navigation {
   float: right;
 }
-.menu {
-  font-size: 0;
-}
 .menu-item {
   display: inline-block;
 }
-.menu-item a {
+.menu-heading {
   display: inline-block;
   padding: 15px 25px 40px 25px;
   color: #555555;
   font-weight: 400;
   font-size: 1.3rem;
 }
-.menu-item a:hover {
+.menu-heading:hover {
   color: #5f8c05;
   background-color: #2c2a29;
-  text-decoration: underline;
 }
+.subMenu-wrap {
+  display: none;
+}
+.subMenu-wrap.isAct {
+  display: block;
+  position: absolute;
+  top: 118px;
+  left: 0;
+  right: 0;
+  background-color: #2c2a29;
+}
+.subMenu {
+  display: flex;
+}
+.subMenu__item {
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+.subMenu__link {
+  display: inline-block;
+  margin: 20px 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+.subMenu__list a{
+  font-size: 12px;
+  color: #999;
+}
+
+.subMenu-bottom {
+  width: 100%;
+  background-image: url(../img/subMenu-bottom-bg.jpg);
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 12px;
+}
+.subMenu-bottom__text {
+  color: #64a70b;
+}
+.subMenu-bottom__text a {
+  margin-top: 10px;
+  display: block;
+  color: #999;
+}
+
 
 /* 이벤트 영역 */
 .event-bg {
@@ -240,6 +283,7 @@
   background-color: #00a252;
 }
 .event__pin {
+  z-index: 1;
   position: fixed;
   top: 135px;
   left: 50%;
@@ -406,7 +450,6 @@
 .rewards__btn-box a:first-child:hover,
 .rewards__btn-box a:first-child:focus {
   color: #000;
-  text-decoration: underline;
   background-color: transparent;
 }
 .rewards__btn-box a:last-child {
@@ -418,7 +461,6 @@
 .rewards__eGift-btn:hover, 
 .rewards__eGift-btn:focus {
   color: #fff;
-  text-decoration: underline;
   background-color: #272727;
 }
 
@@ -800,6 +842,7 @@
 .bottom-util li {
   display: inline-block;
   border-left: 1px solid #555;
+  font-size: 12px;
 }
 .bottom-util li:first-child {
   border: 0;
@@ -819,9 +862,7 @@
   height: 34px;
   padding-top: 5px;
   margin: 15px 3px;
-}
-.bottom-btn:hover {
-  text-decoration: underline;
+  font-size: 12px;
 }
 .address {
   font-style: normal;
